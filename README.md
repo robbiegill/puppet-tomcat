@@ -1,11 +1,11 @@
-# Puppet Module for Maven
+# Puppet Module for Tomcat
 
-Installs maven.
+Download and symlink `/opt/tomcat/current`
 
 ## Usage
 
 ```puppet
-require maven
+require tomcat
 ```
 
 ## Required Puppet Modules
