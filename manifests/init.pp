@@ -3,7 +3,7 @@ class tomcat {
   require wget
 
   file { '/opt/tomcat':
-    ensure => present,
+    ensure => 'directory',
     alias  => 'opt-tomcat'
   }
 
