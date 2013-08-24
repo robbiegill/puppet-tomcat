@@ -10,7 +10,7 @@ class tomcat {
   exec { 'fetch-tomcat':
     cwd     => '/opt/tomcat',
     command => 'wget http://archive.apache.org/dist/tomcat/tomcat-7/v7.0.41/bin/apache-tomcat-7.0.41.tar.gz',
-    creates => '/tmp/apache-tomcat-7.0.41.tar.gz',
+    creates => '/opt/tomcat/apache-tomcat-7.0.41.tar.gz',
     path    => ['/opt/boxen/homebrew/bin'],
     alias   => 'fetch-tomcat',
     require => File['opt-tomcat']
